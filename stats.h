@@ -103,8 +103,8 @@ unsigned char find_minimum(unsigned char *myArrayPtr, unsigned int size);
 *
 *  @param A pointer to the given array of 40 characters
 *  @param size The size of the array which is 40 characters
-*  @return The new sorted array
+*  @return none
 */
-unsigned char sort_array(unsigned char myArrayPtr[], unsigned int size);
+void sort_array(unsigned char myArrayPtr[], unsigned int size);
 
 #endif  /* __STATS_H__ */

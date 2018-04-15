@@ -26,6 +26,85 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
+/**
+*  @brief print out the statistics of a given array of values
+*
+*  This function will print out the Median, Mean, Maximum
+*  and Minimum of a 40 characters after being calculated.
+*
+*  @param A pointer to the given array of 40 characters
+*  @return none
+*/
+void print_statistics(unsigned char Median, unsigned char Mean, unsigned char Max, unsigned char Min); 
 
+/**
+*  @brief print out an array.
+*
+*  This function will print the given array of 40 characters.
+*
+*  @param A pointer to the given array of 40 characters
+*  @return none
+*/
+void print_array(unsigned char *myArrayPtr, int size); 
+
+/**
+*  @brief calculate and return the Median of an array
+*
+*  This function will receive an array of 40 characters and 
+*  perform a calculation to find the Median value.
+*
+*  @param A pointer to an array of 40 characters
+*  @param size The size of the array which is 40 characters
+*  @return The Median of the array
+*/
+unsigned char find_median(unsigned char *myArrayPtr, unsigned int size);
+
+/**
+*  @brief calculate and return the Mean of an array
+*
+*  This function will receive an array of 40 characters and 
+*  perform a calculation to find the Mean value.
+*
+*  @param A pointer to an array of 40 characters
+*  @param size The size of the array which is 40 characters
+*  @return The Mean of the array
+*/
+unsigned char find_mean(unsigned char *myArrayPtr, unsigned int size);
+
+/**
+*  @brief check an array to find the Maximum value
+*
+*  This function will receive an array of 40 characters. It will
+*  look for the maximum value then return it.
+*
+*  @param val A pointer to an array of 40 characters 
+*  @param size The size of the array which is 40 characters
+*  @return The maximum character in the array
+*/
+unsigned char find_maximum(unsigned char *myArrayPtr, unsigned int size);
+
+/**
+*  @brief check an array to find the Minimum value
+*
+*  This function will receive an array of 40 characters. It will
+*  look for the minimum value then return it.
+*
+*  @param val A pointer to an array of 40 characters 
+*  @param size The size of the array which is 40 characters
+*  @return The minimum character in the array
+*/
+unsigned char find_minimum(unsigned char *myArrayPtr, unsigned int size);
+
+/**
+*  @brief Sort an array from largest to smallest
+*
+*  This function will receive an array and start rearranging it
+*  from largest to smallest.
+*
+*  @param A pointer to the given array of 40 characters
+*  @param size The size of the array which is 40 characters
+*  @return The new sorted array
+*/
+unsigned char sort_array(unsigned char myArrayPtr[], unsigned int size);
 
 #endif  /* __STATS_H__ */
